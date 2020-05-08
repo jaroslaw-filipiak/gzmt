@@ -1,0 +1,36 @@
+.fw_image {
+	height: 372px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.fw_image-about {
+	background-image: url(./../img/paralax-1.jpg);
+}
+
+.fw_image-about-2 {
+	background-image: url(./../img/18198.jpg);
+
+	@include xl-max {
+		height: 450px;
+
+	}
+
+	.infobox {
+		background-color: $dark-green;
+		padding: 20px 35px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 30px;
+
+
+		@include xl-min {
+			position: absolute;
+			width: 550px;
+
+		}
+
+	}
+}

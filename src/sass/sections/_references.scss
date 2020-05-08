@@ -1,0 +1,26 @@
+.references {
+    padding: 20px 35px;
+    @include wrapContent;
+    color: $dark;
+
+    @include xl-min {
+        padding: 180px 0px 50px 0px;
+    }
+
+    &--list {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0px -30px
+    }
+
+    &--item {
+        margin: 30px 30px;
+
+        @include xl-min {
+            margin: 0px 30px
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.history {
+    padding: 20px 0px;
+
+    @include xl-max {
+        @include wrapContent;
+    }
+
+
+    &--header {
+        @include wrapContent;
+    }
+
+    h4 {
+        padding: 0px 35px 30px 35px;
+    }
+
+    &--images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include lg-min {
+            flex-wrap: wrap;
+
+            img {
+                margin: 10px !important;
+            }
+        }
+
+        @include xl-min {
+            img {
+                margin: 0 !important;
+            }
+        }
+
+        img {
+            margin: 0;
+        }
+
+    }
+
+
+    .slick-slide {
+        width: 215px !important;
+    }
+
+    .slick-track {
+        left: 40px;
+    }
+
+}

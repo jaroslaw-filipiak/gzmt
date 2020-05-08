@@ -1,0 +1,85 @@
+form {
+
+    input,
+    textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: 'Muli',
+            sans-serif;
+
+        @include xl-min {
+            width: 80%;
+        }
+
+        &::placeholder {
+            color: #fff;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: 'Muli', sans-serif;
+        }
+
+        &:placeholder-shown {
+            color: #fff;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: 'Muli', sans-serif;
+        }
+
+        &:focus {
+            color: #fff;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: 'Muli',
+                sans-serif;
+        }
+
+    }
+
+    input[type="submit"] {
+        margin: 20px 0px 0px 0px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: $light-green;
+        display: inline;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 30px;
+        color: #fff;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $dark-green;
+            border: 1px solid white;
+        }
+    }
+
+
+    .rodo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 16px;
+        font-style: italic;
+        padding: 25px 0px;
+
+
+        input {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+
+        }
+    }
+
+
+}

@@ -1,0 +1,190 @@
+.logo {
+    position: relative;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+
+    a {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+
+    img {
+        width: 240px;
+    }
+}
+
+.slicknav_menu {
+    padding: 21px 36px !important;
+    background: rgb(255, 255, 255) !important;
+
+    a {
+        color: $dark !important;
+    }
+
+    @include xl-min {
+        display: none;
+    }
+}
+
+
+.slicknav_brand {
+    line-height: 78px;
+}
+
+.slicknav_btn {
+    margin: 5px 5px 6px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    background-color: transparent !important;
+}
+
+.slicknav_nav {
+    padding-top: 20px !important;
+}
+
+
+
+.slicknav_nav a {
+    padding: 15px 10px !important;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    width: 34px !important;
+    height: 2px !important;
+    margin-bottom: 7px !important;
+}
+
+.slicknav_nav a:hover {
+    background: #fff !important;
+}
+
+.gazomet-header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 0px 35px;
+    transition: height .2s ease-in-out;
+
+    @include xl-min {
+        padding-left: 77px;
+        display: flex;
+    }
+}
+
+.small {
+    height: 55px;
+}
+
+
+.gazomet-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu,
+.wp-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: $dark;
+        text-decoration: none;
+        padding: 0px 30px;
+        position: relative;
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: $dark-green;
+            position: absolute;
+            bottom: -11px;
+            margin: 0 auto;
+            transition: all .3s ease-in-out;
+        }
+
+
+        &:hover {
+            color: $dark-green;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 60%;
+                height: 2px;
+                background-color: $dark-green;
+                position: absolute;
+                bottom: -11px;
+                margin: 0 auto;
+
+            }
+        }
+    }
+}
+
+
+
+.search-box,
+.langs {
+    padding: 0px 30px;
+
+    @include xl-max {
+        margin: 0;
+    }
+
+    a {
+        @include xl-max {
+            margin-left: 0;
+            padding-left: 0 !important;
+        }
+    }
+}
+
+.search-box {
+    @include xl-max {
+        display: none;
+    }
+}
+
+.langs {
+    padding: 0px 30px;
+
+    @include xl-max {
+        margin: 0 !important;
+        padding: 0px 15px !important;
+    }
+
+    a {
+        @include xl-max {
+            margin-left: 0;
+            padding-left: 0 !important;
+        }
+    }
+}

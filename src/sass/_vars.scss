@@ -1,0 +1,15 @@
+$dark: #646464;
+$dark-green: #10664d;
+$light-green: #29b285;
+
+$container-width: 1088px;
+$page-contact-width: 1366px;
+
+@mixin globalPadding {
+    padding: 20px 35px;
+}
+
+@mixin wrapContent {
+    margin: 0 auto;
+    max-width: $container-width;
+}

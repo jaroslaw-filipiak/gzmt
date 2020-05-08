@@ -1,0 +1,72 @@
+{
+	"name": "webpack-sass-bootstrap",
+	"version": "1.0.2",
+	"description": "Webpack-Sass-Bootstrap Boilerplate",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack  --mode=production",
+		"watch": "webpack --progress --watch  --mode=development",
+		"start": "webpack-dev-server --open  --mode=development "
+	},
+	"author": "Shamin Meerankutty",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.7.7",
+		"@babel/preset-env": "^7.7.7",
+		"autoprefixer": "^9.7.3",
+		"babel-loader": "^8.0.6",
+		"clean-webpack-plugin": "^0.1.19",
+		"compression-webpack-plugin": "^2.0.0",
+		"css-loader": "^1.0.1",
+		"file-loader": "^2.0.0",
+		"html-srcsets-loader": "^0.5.1",
+		"html-webpack-plugin": "^3.2.0",
+		"json-loader": "^0.5.7",
+		"mini-css-extract-plugin": "^0.4.5",
+		"node-glob": "^1.2.0",
+		"node-sass": "^4.13.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.3",
+		"postcss-loader": "^3.0.0",
+		"precss": "^4.0.0",
+		"sass-loader": "^7.3.1",
+		"style-loader": "^0.23.1",
+		"uglifyjs-webpack-plugin": "^2.2.0",
+		"webpack": "^4.41.4",
+		"webpack-cli": "^3.3.10",
+		"webpack-dashboard": "^3.2.0",
+		"webpack-dev-server": "^3.10.0",
+		"write-json-webpack-plugin": "^1.1.0"
+	},
+	"dependencies": {
+		"@googlemaps/google-maps-services-js": "^2.6.0",
+		"accordion": "^3.0.2",
+		"aos": "^2.3.4",
+		"bootstrap": "^4.4.1",
+		"css-tooltip": "^0.3.0",
+		"jquery": "^3.4.1",
+		"jquery-ui": "^1.12.1",
+		"lazyload": "^2.0.0-rc.2",
+		"lottie-web": "^5.5.10",
+		"lozad": "^1.14.0",
+		"parallax-js": "^3.1.0",
+		"popper.js": "^1.16.0",
+		"rellax": "^1.12.1",
+		"slick-carousel": "^1.8.1",
+		"slicknav": "^1.0.8",
+		"toggle-all": "^1.1.2",
+		"waypoints": "^4.0.1",
+		"webpack-browser-plugin": "^1.0.20",
+		"webpack-jquery-ui": "^2.0.1"
+	},
+	"directories": {
+		"doc": "docs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/issues"
+	},
+	"homepage": "https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate#readme"
+}

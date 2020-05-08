@@ -1,0 +1,15 @@
+.who-we-are {
+
+
+    @include xl-min {
+        padding-top: 200px;
+    }
+
+    &--content {
+        padding: 20px 35px;
+        @include wrapContent;
+        color: $dark;
+    }
+
+
+}

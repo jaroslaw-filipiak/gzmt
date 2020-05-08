@@ -1,0 +1,46 @@
+.search-results {
+    padding: 0px 35px 50px 35px;
+
+    color: $dark;
+
+    @include xl-min {
+        padding: 170px 35px 100px 35px;
+    }
+
+    &--wrapper {
+        @include wrapContent;
+    }
+
+    &--row {
+        padding: 20px 0px;
+        position: relative;
+
+        @include xl-min {
+            padding: 50px 0px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0vw;
+            height: 1px;
+            background-color: $light-green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @include xl-min {
+                width: 7vw;
+            }
+        }
+    }
+
+    .download {
+        padding: 20px 0px 0px 0px;
+
+        @include xl-min {
+            padding: 60px 0px 0px 0px;
+        }
+
+    }
+}

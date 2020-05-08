@@ -1,0 +1,378 @@
+ .bg-page-about {
+     background-image: url('./../img/about-hero.jpg');
+ }
+
+ .bg-home-page {
+     background-image: url('./../img/hero.jpg');
+ }
+
+ .bg-page-contact {
+     background-image: url('./../img/14070.jpg');
+ }
+
+ .bg-page-oferta-produkty {
+     background-image: url('./../img/offer-bg.jpg');
+ }
+
+ .bg-page-produkt {
+     background-image: url('./../img/offer-bg.jpg');
+ }
+
+ .bg-page-referencje {
+     background-image: url('./../img/ref-bg.jpg');
+ }
+
+ .bg-page-szukaj {
+     background-image: url('./../img/1199.jpg');
+ }
+
+ .bg-page-polityka-prywatnosci {
+     background-image: url('./../img/hero.jpg');
+ }
+
+
+
+ .gazomet-home-hero {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+
+     @include xl-min {
+         position: relative;
+     }
+
+     &--image {
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding-bottom: 69%;
+         width: 100%;
+
+         @include xl-min {
+             padding-bottom: 45%;
+         }
+     }
+
+     .gazomet-hero-items-wrapper {
+
+
+         @include xl-min {
+             position: absolute;
+             bottom: -60px;
+             display: flex;
+             align-items: flex-start;
+             max-width: $container-width;
+
+             @include xl-min {
+                 min-width: $container-width;
+             }
+         }
+     }
+
+     &--heading-area {
+         background-color: $dark-green;
+         padding: 50px 35px;
+         min-width: 59%;
+
+         @include xl-min {
+             min-width: 59%;
+             width: 59%;
+             padding: 20px 150px 20px 35px;
+         }
+     }
+
+     &--search-area {
+         background-color: $light-green;
+         padding: 17px 35px 10px 35px;
+         width: 100%;
+
+         @include xl-min {
+             width: 40%;
+             padding: 28px 35px 28px 35px;
+         }
+
+         &__search-box {
+             display: flex;
+             align-items: center;
+             border-bottom: 1px solid #fff;
+             position: relative;
+
+             img {
+                 padding-right: 10px;
+                 margin-top: 18px;
+             }
+         }
+
+         input[type="text"] {
+             width: 100%;
+             background: transparent;
+             border: none;
+             padding-bottom: 15px;
+
+
+             &::placeholder {
+                 color: #fff;
+                 font-size: 18px;
+             }
+
+         }
+
+         div {
+             opacity: .79;
+
+             p {
+                 font-size: 13px;
+                 text-align: center;
+
+                 @include xl-min {
+                     text-align: left;
+                 }
+             }
+         }
+     }
+
+
+ }
+
+ // ==================================================
+ //  GAZOMET SUBPAGE HERO/HEADER SECTION
+ // =================================================
+
+ .gazomet-subpage-hero {
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+
+
+     @include xl-min {
+         position: relative;
+     }
+
+     &--image {
+
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+         padding-bottom: 104%;
+         width: 100%;
+
+
+         @include xl-min {
+             padding-bottom: 22%;
+         }
+     }
+
+
+     .gazomet-hero-items-wrapper {
+         width: 100%;
+
+         @include xl-min {
+             position: absolute;
+             bottom: -145px;
+             display: flex;
+             align-items: stretch;
+             max-width: $container-width;
+             min-width: $container-width;
+
+         }
+     }
+
+     &--heading-area {
+         background-color: $dark-green;
+         padding: 50px 35px;
+         min-width: 59%;
+
+         @include xl-min {
+             min-width: 59%;
+             width: 59%;
+             padding: 20px 35px 20px 35px;
+         }
+
+         p {
+             max-width: 80%;
+         }
+
+         .breadcrumbs {
+
+
+
+             ul {
+                 display: flex;
+                 align-items: center;
+                 padding: 0;
+             }
+
+             li {
+                 display: flex;
+             }
+
+             a {
+                 color: #fff;
+                 font-size: 14px;
+                 font-weight: 300;
+                 text-decoration: none;
+                 padding-right: 10px;
+                 position: relative;
+
+                 &::after {
+                     content: "";
+                     display: block;
+                     width: 0%;
+                     height: 2px;
+                     background-color: $dark-green;
+                     position: absolute;
+                     bottom: 0px;
+                     margin: 0 auto;
+                     transition: all .3s ease-in-out;
+                 }
+
+
+                 &:hover {
+                     color: #fff;
+
+                     &::after {
+                         content: "";
+                         display: block;
+                         width: 60%;
+                         height: 2px;
+                         background-color: #fff;
+                         position: absolute;
+                         bottom: 0px;
+                         margin: 0 auto;
+
+                     }
+                 }
+
+
+             }
+         }
+     }
+
+     .page-ref {
+         @include xl-min {
+             width: 70%;
+         }
+     }
+
+     .page-about {
+         @include xl-min {
+             width: 70%;
+         }
+
+         p {
+             @include xl-min {
+                 max-width: 90%;
+                 ;
+             }
+         }
+     }
+
+
+     &--category-thumbnail {
+         width: 100%;
+         background-image: url(./../img/product-thumbnail.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+
+
+         @include xl-min {
+             width: 41%;
+             padding: 28px 35px 28px 35px;
+             padding-bottom: 29.7%;
+
+         }
+     }
+
+ }
+
+
+ // ==================================================
+ //  SINGLE PRODUCT , bg image disable on mobile
+ // =================================================
+
+ .gazomet-subpage-hero__product {
+
+     .gazomet-hero-items-wrapper {
+
+         @include xl-max {
+             display: flex;
+             flex-direction: column-reverse;
+         }
+
+     }
+
+     .gazomet-subpage-hero--image {
+         display: none;
+
+         @include xl-min {
+             display: block;
+         }
+     }
+
+     .gazomet-subpage-hero--category-thumbnail {
+
+         @include xl-max {
+             height: 386px;
+         }
+
+     }
+ }
+
+
+
+
+ .navbar-search-box {
+     background-color: $light-green;
+     width: 300px;
+     position: absolute;
+     right: 200px;
+     bottom: -110px;
+     display: flex;
+     flex-direction: column;
+
+
+     form {
+         padding: 17px 35px 17px 35px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-bottom: 1px solid #fff;
+     }
+
+     img {
+         padding-right: 15px;
+     }
+
+     input {
+         margin-top: 0px;
+         width: 100%;
+         border: none;
+     }
+
+     &__close {
+         padding: 2px 35px 2px 35px;
+         color: #fff;
+         background-color: $dark-green;
+         width: 100%;
+         transition: background-color .3s ease-in-out;
+
+         text-align: center;
+         cursor: pointer;
+
+         p {
+             margin-bottom: 0;
+         }
+
+         &:hover {
+             background-color: $light-green;
+         }
+     }
+
+
+
+ }

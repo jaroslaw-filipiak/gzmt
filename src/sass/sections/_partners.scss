@@ -1,0 +1,52 @@
+.partners {
+	overflow-x: hidden;
+
+	@include xl-min {
+		@include wrapContent;
+		padding: 0px 35px 50px 35px;
+	}
+
+	&-header {
+		@include globalPadding;
+		@include wrapContent;
+
+		@include xl-min {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 40px;
+			padding-left: 40px;
+		}
+
+		.smaller {
+			padding: 30px 0px;
+
+			@include xl-min {
+				max-width: 45%;
+			}
+		}
+	}
+
+	&-logos {
+		display: flex;
+
+		@include xl-min {
+			flex-wrap: wrap;
+		}
+
+		&-row {
+			padding-bottom: 60px;
+			display: flex;
+
+			@include xl-min {
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 0 auto;
+			}
+
+			img {
+				margin: 0px 10px;
+			}
+		}
+	}
+}

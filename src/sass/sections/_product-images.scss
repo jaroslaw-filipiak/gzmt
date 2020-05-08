@@ -1,0 +1,23 @@
+.product-images {
+    @include globalPadding;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: -10px -10px;
+
+    @include xl-min {
+        margin: 0px -10px;
+    }
+
+    img {
+        margin: 10px 10px;
+
+        @include xl-min {
+            margin: 0px 10px;
+        }
+
+
+    }
+}

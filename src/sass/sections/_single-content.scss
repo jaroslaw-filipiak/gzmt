@@ -1,0 +1,13 @@
+.single-content {
+	@include globalPadding;
+	color: $dark;
+
+	@include xl-min {
+		padding-top: 190px;
+	}
+
+	&--wrapper {
+		@include wrapContent;
+		padding: 0px 0px 50px 0px;
+	}
+}

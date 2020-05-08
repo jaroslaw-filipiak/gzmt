@@ -1,0 +1,10 @@
+.product-info {
+
+    &--wrapper {
+        @include wrapContent;
+    }
+
+    @include xl-min {
+        padding-top: 215px;
+    }
+}

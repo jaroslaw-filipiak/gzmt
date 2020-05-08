@@ -1,0 +1,133 @@
+.accordions {
+    @include globalPadding;
+}
+
+.accordion {
+
+    &--header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -30px;
+
+        img {
+            margin-right: 30px;
+            position: relative;
+            top: -5px;
+        }
+
+        h4 {
+            cursor: pointer;
+
+            &::selection {
+                background-color: transparent;
+            }
+        }
+
+
+    }
+
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+
+    .accordion-title {
+        h4 {
+            position: relative;
+        }
+
+        h4 {
+            &::after {
+                content: "";
+                display: block;
+                width: 0%;
+                height: 2px;
+                background-color: $dark-green;
+                position: absolute;
+                bottom: -5px;
+                margin: 0 auto;
+                transition: all .2s ease-in-out;
+            }
+        }
+
+
+
+        &:hover {
+
+            h4 {
+                &::after {
+                    content: "";
+                    width: 60%;
+
+                }
+            }
+
+
+
+        }
+
+    }
+
+}
+
+.accordion-item .accordion-title {
+    cursor: pointer;
+    transition: all 0.4s;
+    display: flex;
+
+
+
+
+    @include xl-min {
+        position: relative;
+        left: -30px;
+    }
+
+    img {
+        position: relative;
+        top: -4px;
+        margin-right: 30px;
+        transform: rotate(0deg);
+        transition: transform .4s ease-in-out;
+
+    }
+
+
+}
+
+.accordion-item .accordion-title.active-title {
+
+    img {
+        transform: rotate(90deg);
+    }
+}
+
+.accordion-item .accordion-title h2 {
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down {
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+    transform: rotate(-180deg);
+}
+
+.accordion-item .accordion-content {
+    display: none;
+    padding: 20px;
+}
+
+.accordion-item .accordion-content.active {
+    display: block;
+}
+
+.accordion-item .accordion-content p {
+    margin: 0;
+}

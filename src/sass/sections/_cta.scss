@@ -1,0 +1,66 @@
+.cta {
+    color: #fff;
+    background-color: $light-green;
+
+    &--left,
+    &--right {
+        @include xl-min {
+            height: 333px;
+        }
+    }
+
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &--left {
+        @include xl-min {
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(./../img/cta-image.jpg);
+        }
+    }
+
+    &--right {
+        padding: 50px 35px;
+        background-color: $light-green;
+
+        @include xl-min {
+            padding: 30px 35px;
+        }
+
+        p,
+        a {
+
+            @include xl-min {
+                max-width: 640px;
+
+            }
+
+        }
+
+        p {
+            @include xl-min {
+                padding-right: 10%;
+            }
+        }
+    }
+
+    &--phone {
+        font-size: 37px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+
+        @include xl-min {
+            font-size: 40px;
+        }
+    }
+
+    .gazomet-btn {
+        margin-top: 20px;
+    }
+}

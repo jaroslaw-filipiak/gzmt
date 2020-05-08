@@ -1,0 +1,102 @@
+@import 'reset';
+@import 'rwd';
+// @import 'debug';
+@import 'vars';
+@import 'fonts';
+@import './nav/nav.scss';
+@import './sections/form';
+@import './sections/hero';
+@import './sections/about-and-offer';
+@import './sections/partners';
+@import './sections/cta';
+@import './sections/footer';
+@import './sections/products';
+@import './sections/download';
+@import './sections/certificates';
+@import './sections/references';
+@import './sections/accordions';
+@import './sections/product-info';
+@import './sections/product-images';
+@import './sections/portfolio';
+@import './sections/who-we-are';
+@import './sections/features-list';
+@import './sections/fw_image';
+@import './sections/txt-content';
+@import './sections/history';
+// @import './sections/timeline';
+@import './sections/contact-info';
+@import './sections/full-contact';
+@import './sections/search-results';
+@import './sections/single-content';
+@import './sections/not-found';
+@import './timeline/timeline';
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.d-none {
+    display: none;
+}
+
+.gazomet-btn {
+    font-size: 24px;
+    color: $dark;
+    background: #fff;
+    display: block;
+    padding: 24px 0px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+
+        background: $dark-green;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+.gazomet-btn__green {
+    background-color: $light-green;
+    color: #fff;
+}
+
+.flex-header {
+    color: $dark;
+
+    @include xl-min {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        padding-left: 40px;
+    }
+
+    .smaller {
+        padding: 30px 0px;
+
+        @include xl-min {
+            max-width: 45%;
+        }
+    }
+}
+
+.bg-accent {
+    @include xl-min {
+        background-image: url(./../img/accent-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+.bg-accent__fixed {
+    @include xl-min {
+        background-attachment: fixed;
+    }
+}
