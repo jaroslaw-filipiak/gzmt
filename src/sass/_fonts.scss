@@ -16,6 +16,16 @@ h6 {
 }
 
 h1 {
+	@include xs {
+		font-size: 50px;
+		line-height: 52px;
+	}
+
+	@include sm {
+		font-size: 50px;
+		line-height: 52px;
+	}
+
 	font-size: 60px;
 	line-height: 72px;
 }

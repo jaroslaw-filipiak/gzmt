@@ -58,11 +58,20 @@ $(document).ready(function () {
             autoplaySpeed: 2000,
             mobileFirst: true,
             arrows: false,
-            centerMode: true,
+            centerMode: false,
             responsive: [{
-                breakpoint: 992,
-                settings: 'unslick',
-            }, ],
+                    breakpoint: 992,
+                    settings: 'unslick',
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerPadding: '40px',
+                    },
+                }
+            ],
         });
     }
 

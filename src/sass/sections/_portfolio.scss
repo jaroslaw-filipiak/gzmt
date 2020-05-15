@@ -1,35 +1,61 @@
 .portfolio {
-    padding: 20px 35px;
+
+
     margin: 0 auto;
     max-width: calc(1088px + 80px);
+
+    @include xl-max {
+        margin-bottom: 20px;
+    }
+
 
     @include xl-min {
         padding: 20px 35px 80px 35px;
     }
 
-    &-items {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    .flex-header {
+        padding: 20px 35px;
+    }
 
+    &-items {
+
+
+        @include lg-min {
+            margin: -10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
 
         @include xl-min {
             margin: 0px -10px;
+
+        }
+
+        .slick-list {
+            height: 300px;
+
 
         }
     }
 
     &-item {
 
-        position: relative;
-        transform: scale(1);
 
-        transition: all .3s ease-in-out;
+        @include md-min {
+            position: relative;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+            margin: 10px;
+        }
+
+
+
 
         @include lg-min {
             width: 352px;
-            margin: 10px;
+
         }
 
         &-1 {
@@ -99,24 +125,23 @@
     }
 
 
-    .slick-slide {
-        margin: 10px;
-        width: 352px !important;
+    // .slick-slide {
+    //     margin: 10px;
+    //     width: 352px !important;
+    // }
 
-    }
+    // .portfolio-items.slick-initialized.slick-slider {
+    //     @include xs {
+    //         height: 316px;
+    //     }
 
-    .portfolio-items.slick-initialized.slick-slider {
-        @include xs {
-            height: 316px;
-        }
-
-        @include sm {
-            height: 316px;
-        }
-
+    //     @include sm {
+    //         height: 316px;
+    //     }
 
 
-    }
+
+    // }
 }
 
 // portfolio

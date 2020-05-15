@@ -143,7 +143,11 @@
     margin-top: 20px;
     color: #fff;
     padding: 55px;
-    margin-bottom: 150px;
+
+
+    @include xl-min {
+        margin-bottom: 150px;
+    }
 
     .gazomet-btn {
         margin: 30px 0px 0px 0px;
