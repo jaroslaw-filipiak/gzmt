@@ -120,6 +120,10 @@
         padding: 0px 30px;
         position: relative;
 
+        @include xl {
+            padding: 0px 10px;
+        }
+
 
         &::after {
             content: "";
@@ -131,6 +135,10 @@
             bottom: -11px;
             margin: 0 auto;
             transition: all .3s ease-in-out;
+
+            @include xl-max {
+                bottom: 0px;
+            }
         }
 
 
@@ -146,6 +154,10 @@
                 position: absolute;
                 bottom: -11px;
                 margin: 0 auto;
+
+                @include xl-max {
+                    bottom: 0px;
+                }
 
             }
         }
@@ -188,6 +200,45 @@
         @include xl-max {
             margin-left: 0;
             padding-left: 0 !important;
+            position: relative;
         }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: $dark-green;
+            position: absolute;
+            bottom: -11px;
+            margin: 0 auto;
+            transition: all .3s ease-in-out;
+
+            @include xl-max {
+                bottom: 0px;
+            }
+        }
+
+        &:hover {
+            color: $dark-green;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 60%;
+                height: 2px;
+                background-color: $dark-green;
+                position: absolute;
+                bottom: -11px;
+                margin: 0 auto;
+
+                @include xl-max {
+                    bottom: 0px;
+                }
+
+            }
+        }
+
+
     }
 }
